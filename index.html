@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anasayfa</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <link rel="icon" href="./assets/images/1991.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="./assets/images/zke6f6vyd7ib1.jpg">
+</head>
+
+<body>
+
+  <!-- özel -->
+  <main>
+
+    <!-- preload -->
+    <div class="preload" data-preaload>
+      <div class="circle"></div>
+      <p class="text">Grand Feast</p>
+    </div>
+
+    <!-- header -->
+    <header class="header" data-header>
+      <div class="gradient-overlay"></div>
+      <!-- navbar -->
+      <nav class="navbar">
+        <div class="container">
+          <a href="index.html" class="logo">
+            <img src="./assets/images/-logo.png" alt="Logo">
+          </a>
+          <ul class="nav-links">
+            <li><a href="about.html">Hakkımızda</a></li>
+            <li><a href="menu.html">Menü</a></li>
+            <li><a href="index.html">Anasayfa</a></li>
+            <li><a href="reservation.html">Rezervasyon</a></li>
+            <li><a href="contact.html">İletişim</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container">
+        <a href="#" class="logo">
+          <img src="./assets/images/-logo.png" width="260px" height="50px" alt="Grand Feast - Anasayfa">
+        </a>
+
+        <nav class="navbar" data-navbar>
+          <button class="close-btn" aria-label="menüyü kapat" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+          <a href="#" class="logo">
+            <img src="./assets/images/-logo.png" width="160px" height="50px" alt="Grand Feast - Anasayfa">
+          </a>
+
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="about.html" class="navbar-link hover-underline">
+                <div class="separator"></div>
+                <span class="span">Hakkımızda</span>
+              </a>
+            </li>
+            <li class="navbar-item">
+              <a href="menu.html" class="navbar-link hover-underline">
+                <div class="separator"></div>
+                <span class="span">MENÜ</span>
+              </a>
+            </li>
+            <li class="navbar-item">
+              <a href="index.html" class="navbar-link hover-underline active">
+                <div class="separator"></div>
+                <span class="span">Anasayfa</span>
+              </a>
+            </li>
+            <li class="navbar-item">
+              <a href="reservation.html" class="navbar-link hover-underline">
+                <div class="separator"></div>
+                <span class="span">Rezervasyon</span>
+              </a>
+            </li>
+            <li class="navbar-item">
+              <a href="contact.html" class="navbar-link hover-underline">
+                <div class="separator"></div>
+                <span class="span">İletişim</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="search-box">
+          <style>
+            .header .navbar-list {
+              margin-left: 10%;
+            }
+          </style>
+          <input type="text" id="searchInput" placeholder=" Ara..." onkeyup="liveSearch()" />
+          <ul id="searchResults" class="results-list"></ul>
+        </div>
+
+        <a href="explore.html" class="btn btn-secondary">
+          <span class="text text-1">Keşfet</span>
+          <span class="text text-2" aria-hidden="true">Tıkla</span>
+        </a>
+        <button class="nav-open-btn" aria-label="menüyü aç" data-nav-toggler>
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <article>
+      <section class="hero text-center" aria-label="anasayfa" id="home">
+
+        <div class="slider-bg">
+          <img src="./assets/images/zke6f6vyd7ib1.jpg" width="1920" height="1080" alt="" class="img-cover">
+        </div>
+
+        <p class="label-2 section-subtitle">1991'den beri</p>
+
+        <h1 class="display-1 hero-title">
+          YOLCULUĞUMUZA<br>
+          BAŞLADIK...
+        </h1>
+
+        <p class="body-2 hero-text">
+          Sıcak atmosfer, lezzet dolu anlar...
+        </p>
+
+        <a href="handmenu.html" class="btn btn-primary" id="menuBtn">
+          <span class="text text-1">Menümüzü İnceleyin</span>
+          <span class="text text-2" aria-hidden="true">Tıkla</span>
+        </a>
+
+        <a href="reservation.html" class="hero-btn has-after baklava-btn">
+          <img src="./assets/images/hero-icon.png" width="48" height="48" alt="rezervasyon ikonu">
+          <span class="label-2 text-center span">Rezervasyon</span>
+        </a>
+      </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <style>
+      .footer {
+        background-color: #1a1a1a;
+        color: #fff;
+        padding: 50px 0 20px;
+        font-size: 13px;
+      }
+    </style>
+
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <img src="./assets/images/-logo.png" alt="Grand Feast">
+          </div>
+          <p style="color: #999; line-height: 1.6;">1991'den beri, sofranıza özgün lezzetler getiriyoruz.</p>
+          <div class="social-media">
+            <a href="https://www.fooddeliveryexample.com/restaurant/grandfeast" class="social-icon"
+              target="_blank">
+              <img src="assets/images/yemeksepeti.png" alt="Sipariş">
+            </a>
+            <a href="https://www.instagram.com/grandfeastrestaurant/" class="social-icon" target="_blank">
+              <img src="assets/images/instagram (1).png" alt="Instagram">
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-title">Hızlı Linkler</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Anasayfa</a></li>
+            <li><a href="about.html">Hakkımızda</a></li>
+            <li><a href="menu.html">Menü</a></li>
+            <li><a href="reservation.html">Rezervasyon</a></li>
+            <li><a href="contact.html">İletişim</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-title">İletişim</h3>
+          <ul class="footer-links">
+            <li><a href="tel:+1234567890">+1 234 567 890</a></li>
+            <li><a href="mailto:info@grandfeast.com">info@grandfeast.com</a></li>
+            <li>123 Lezzet Sokak, Gourmet Caddesi<br>New York, NY 10001<br>ABD</li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-title">Çalışma Saatleri</h3>
+          <ul class="footer-links">
+            <li>Pazartesi - Cuma<br>10:00 - 23:00</li>
+            <li>Cumartesi - Pazar<br>11:00 - 00:00</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Grand Feast. Tüm hakları saklıdır. </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript Dosyaları -->
+  <script src="./assets/js/script.js"></script>
+  <script src="search.js"> </script>
+  <script src="speech.js"> </script>
+
+  <!-- Ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
